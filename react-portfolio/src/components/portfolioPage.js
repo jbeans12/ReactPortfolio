@@ -1,8 +1,11 @@
 import React from "react";
-
+import "./style.css"
 
 function Portfolio() {
     return (
+      <div style={{ 
+        backgroundImage: `url("https://c0.wallpaperflare.com/preview/84/694/443/codes-coding-css-css3.jpg")` 
+      }}>
  
         <div className="container">
             <div className="jumbotron">
@@ -22,80 +25,83 @@ function Portfolio() {
                 <li className="nav-item">
                   <a className="nav-link" href="#mywork">My Work</a>
                 </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li className="nav-item">
+                  <a className="nav-link dropdown-toggle" href="#contactinfo">
                     Contact Info
                   </a>
-                  <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a className="dropdown-item" href="#email">Email</a>
-                    <a className="dropdown-item" href="#linkedIn">LinkedIn</a>
-                    <a className="dropdown-item" href="#github">GitHub</a>
-                  </div>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="https://docs.google.com/document/d/1cHTupbDPFT9phm5bkZzOs__Mud3neEUjyoeSB3dJBeI/edit?usp=sharing">
+                    Resume
+                  </a>
                 </li>
               </ul>
             </div>
         </nav>
         <div id="mywork">
-            <div className="card text-center">
-                <div className="card-header"> Featured Project </div>
-                    <div className="card-body">
-                        <h5 className="card-title">Password Generator</h5>
-                            <iframe src="https://drive.google.com/file/d/15-oCYuZx6Oknzdx__yjGCIIHCev7A_u3/preview" width="440" height="280"></iframe>
-                                <a href="https://jbeans12.github.io/passwordGenerator/Develop/" class="btn btn-primary">Go to Password Generator</a>
-                    </div>
-            </div>
-    </div>
-    <h1 className="display-5"> Other Works </h1>
-    <div className="row">
+            
+            
+    
+    <h1 className="display-5"> My Projects </h1>
+    <div className="row" id="projectCards">
         <div className="col-row-3">
             <div className="card">
                 <div className="card-body">
-                  <p class="card-text">This is a simple weather app. 
-                      When you search a city or town and press "Enter" the app will automatically show 
-                      current date and time, current temperature, curret weather, current humidity, current windspeed, 
-                      and the days Low and High temperatures. 
-                      <a href="https://jbeans12.github.io/weatherApp/" class="btn btn-primary">Go to Weather App</a>
-                  </p>
+                  <p className="card-text">The Move is an app created to make finding a social gathering simple and easy</p>
+                  <p><a href="https://radiant-harbor-61772.herokuapp.com/Event" class="btn btn-primary">Go to The Move</a></p>
+                  <p><iframe src="https://drive.google.com/file/d/1-yNQutSaKI_z2Uu1lh7ny9vnw-JERto2/preview" width="340" height="280"></iframe></p>
                 </div>
             </div> 
         </div>
         <div className ="col-row-3">
             <div className="card">
                 <div className="card-body">
-                  <p className="card-text">This is Princess LouLou-BabyFace's fan page. Revel in her cuteness!
-                      
+                <p class="card-text">This is a simple Password Generator App 
+                      <p><a href="https://jbeans12.github.io/passwordGenerator/Develop/" class="btn btn-primary">Go to Password Generator</a></p>
+                      <p><iframe src="https://drive.google.com/file/d/1a871-agozS-k5gMuPmNHT6Z30Qd95sXz/preview" width="340" height="280"></iframe></p>
                   </p>
-                  <a href="https://jbeans12.github.io/loulou/" class="btn btn-primary">Go to Lous FanPage</a>
                 </div>
             </div>
         </div>
         <div className ="col-row-3">
             <div className="card">
                 <div className="card-body">
-                  <p className="card-text">This is Neji the cat. He LOVES chicken.</p>
+                  <p className="card-text">This is a Marijuana Delivery App called GoodDeez LLC
+                  <p><a href="https://rocky-castle-10340.herokuapp.com/" class="btn btn-primary">Go to GoodDeez</a></p>
+                  <p><iframe src="https://drive.google.com/file/d/1M4EpsXDbIip_mQu6c593kIFVUbxLyIok/preview" width="340" height="280"></iframe></p>
+                  </p>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 
     <div className="card">
         <div className="card-body">
+          <div id="aboutme">
             <h2>About Me</h2>
-        <p>Hello! My name is Jennifer and I currently live in Los Angeles, California. I am so excited to see how far I will go in this course. Obviously this page is at a bare-minimum but I'm looking forward to growing and expanding my portfolio. In my free time I love to cook and hangout with my boyfriend and cats. I wish I could travel more right now but hopefully soon I'll be able to go on new adventure. 
-
-            My goals for my furture are to become a pro web-developer and continue my work and education in this feild. I hope to work my way to the top of a buisness and manage a team. 
+        <p>Hello! My name is Jennifer and I currently live in Los Angeles, California but will soon be realocatiing to the East Coast.
+          I am a full-stack webdeveloper in the making! I recently graduated from UCLA extension for codinig.
+          I can't wait to contiun down this path and see what I can do.
+          My goals for my furture are to become a pro web-developer and continue my work and education in this feild. 
+          I hope to work my way to the top of a buisness and manage a team. 
         </p>
+        </div>
         </div>
     </div>
 
-    <div className="contactinfo">
+    <div className="card">
+      <div id="contactinfo">
         <h2>Contact Info</h2>
-        <div className="email">Email:<a href="jennvereecken1@yahoo.com"> jennvereecken1@yahoo.com</a>
-            GitHub:<a id="github" href="https://github.com/jbeans12"> jbeans12 </a>
-            LinkedIn:<a id="linkedIn" href="LINKINPLACEHOLDER"> Jennifer Vereecken</a>
+        <div className="email">
+          Email: <a href="jennvereecken1@yahoo.com"> jennvereecken1@yahoo.com </a>
+            GitHub: <a id="github" href="https://github.com/jbeans12"> jbeans12 </a>
+            LinkedIn:<a id="linkedIn" href="LINKINPLACEHOLDER"> Jennifer Vereecken </a>
+            Resume: <a id="Resume" href="https://docs.google.com/document/d/1cHTupbDPFT9phm5bkZzOs__Mud3neEUjyoeSB3dJBeI/edit?usp=sharing"> 2021</a>
+        </div>
         </div>
     </div> 
-   
+   </div>
 </div>
 
     );
